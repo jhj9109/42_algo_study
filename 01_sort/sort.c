@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "sort.h"
 
-int	sort(void)
+int	main(void)
 {
 	int	arr[10] = {1, 0, 3, 2, 5, 4, 6, 7, 8, 9};
 	int len = 10;
