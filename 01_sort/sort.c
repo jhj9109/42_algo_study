@@ -3,7 +3,7 @@
 
 int	main(void)
 {
-	int	arr[10] = {1, 0, 3, 2, 5, 4, 6, 7, 8, 9};
+	int	arr[10] = {9, 1, 7, 0, 4, 6, 5, 3, 2, 8};
 	int len = 10;
 	int	cnt = 0;
 	int newArr[10];
@@ -15,7 +15,7 @@ int	main(void)
 	print_array("sort_3el:", newArr, 3, -1);
 
 	copy_arr(arr, newArr, len);
-	bubble_sort(arr, len, &cnt);
+	bubble_sort(newArr, len, &cnt);
 	print_array("bubble_sort:", newArr, len, cnt);
 	
 	insert_sort(arr, len, newArr, &cnt);
