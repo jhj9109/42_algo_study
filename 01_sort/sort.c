@@ -7,6 +7,7 @@ int	main(void)
 	int len = 10;
 	int	cnt = 0;
 	int newArr[10];
+	t_node	*tree;
 	
 	sort_2el(arr, newArr);
 	print_array("sort_2el:", newArr, 2, -1);
@@ -23,5 +24,10 @@ int	main(void)
 
 	printf("min_heap: ");
 	min_heap(arr);
+	printf("\n");
+
+	tree = tree_sort(arr, len);
+	printf("tree_sort: ");
+	print_inorder(tree);
 	printf("\n");
 }

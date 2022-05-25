@@ -10,7 +10,9 @@ SRC_FILES = bubble_sort.c \
 			print_array.c \
 			sort_2el.c \
 			sort_3el.c \
-			heap_sort.c
+			heap_sort.c \
+			tree_sort.c \
+			print_inorder.c
 
 SRC = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJ = $(SRC:.c=.o)
