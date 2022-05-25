@@ -20,4 +20,8 @@ int	main(void)
 	
 	insert_sort(arr, len, newArr, &cnt);
 	print_array("insert_sort:", newArr, len, cnt);
+
+	printf("min_heap: ");
+	min_heap(arr);
+	printf("\n");
 }
