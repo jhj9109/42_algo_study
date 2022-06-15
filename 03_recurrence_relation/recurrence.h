@@ -11,6 +11,8 @@ typedef	struct s_germ
 int	recurrence_iter(int n, int k);
 /* 2.recurrence_dp_bottom_top */
 int	recurrence_dp_bottom_top(int n, int k);
+/* 2.recurrence_recursive */
+int	recurrence_recursive(int n, int k);
 /* recurrence_utils */
 t_germ	*ft_obj_new(int delay);
 t_germ	*ft_obj_last(t_germ *head);
