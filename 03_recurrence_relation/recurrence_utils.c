@@ -1,4 +1,5 @@
 #include "recurrence.h"
+#include <stdlib.h>
 
 t_germ	*ft_obj_new(int delay)
 {
