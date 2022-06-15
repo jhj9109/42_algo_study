@@ -1,7 +1,6 @@
 #ifndef RECURRENCE_H
 # define RECURRENCE_H
 
-
 typedef	struct s_germ
 {
 	int delay;
@@ -10,6 +9,8 @@ typedef	struct s_germ
 
 /* 1.recurrence_iter */
 int	recurrence_iter(int n, int k);
+/* 2.recurrence_dp_bottom_top */
+int	recurrence_dp_bottom_top(int n, int k);
 /* recurrence_utils */
 t_germ	*ft_obj_new(int delay);
 t_germ	*ft_obj_last(t_germ *head);
