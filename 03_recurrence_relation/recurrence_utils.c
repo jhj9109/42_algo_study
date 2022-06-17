@@ -1,5 +1,6 @@
 #include "recurrence.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 t_germ	*ft_obj_new(int delay)
 {
@@ -70,4 +71,27 @@ void	arr_print(int *arr, int end)
 	{
 		printf("%d ", arr[i]);
 	}
+}
+
+static int	_ft_isdigit(const char c)
+{
+	return ('0' <= c && c <= '9');
+}
+
+int	ft_atoll(const char *str, long long *n)
+{
+	int	len;
+
+	len = 0;
+	*n = 0;
+	while (_ft_isdigit(str[len]))
+	{
+		if (len > 10)
+			break ;
+		*n = *n * 10 + (str[len] - '0');
+		len++;
+	}
+	if (str[len] != '\0' || len == 0 || UINT32_MAX < *n || *n <= 0)
+		return (ERROR);
+	return (SUCCESS);
 }

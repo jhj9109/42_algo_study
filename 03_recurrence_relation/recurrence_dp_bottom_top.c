@@ -1,4 +1,5 @@
 #include "recurrence.h"
+#include <stdlib.h>
 
 int	recurrence_dp_bottom_top(int n, int k)
 {

@@ -14,9 +14,7 @@ static int	_re_with_dp(int *arr, int n, int k)
 
 int	recurrence_dp_top_bottom(int n, int k)
 {
-	int *arr;
-	int n;
-	int	k;
+	int	*arr;
 	int	result;
 
 	arr = calloc(n + 1, sizeof(int));
