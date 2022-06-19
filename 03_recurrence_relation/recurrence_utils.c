@@ -7,6 +7,8 @@ t_germ	*ft_obj_new(int delay)
 	t_germ	*ret;
 
 	ret = malloc(sizeof(t_germ));
+	if (ret == NULL)
+		return (NULL);
 	ret->delay = delay;
 	return (ret);
 }
@@ -49,7 +51,7 @@ int	ft_obj_size(t_germ *head)
 	return (size);
 }
 
-void	ft_obj_clear(t_germ **head)
+void	ft_germ_obj_clear(t_germ **head)
 {
 	t_germ	*cur;
 	t_germ	*temp;

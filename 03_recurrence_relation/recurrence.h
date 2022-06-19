@@ -33,7 +33,7 @@ t_germ	*ft_obj_new(int delay);
 t_germ	*ft_obj_last(t_germ *head);
 void	ft_obj_pushback(t_germ **head, t_germ *new_node);
 int		ft_obj_size(t_germ *head);
-void	ft_obj_clear(t_germ **head);
+void	ft_germ_obj_clear(t_germ **head);
 void	arr_print(int *arr, int end);
 int		ft_atoll(const char *str, long long *n);
 

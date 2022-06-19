@@ -1,3 +1,4 @@
+#include "recurrence.h"
 #include <stdlib.h>
 
 static int	_re_with_dp(int *arr, int n, int k)
@@ -19,7 +20,7 @@ int	recurrence_dp_top_bottom(int n, int k)
 
 	arr = calloc(n + 1, sizeof(int));
 	if (!arr)
-		exit(EXIT_FAILURE);
+		return (ERROR);
 	result = _re_with_dp(arr, n, k);
 	free(arr);
 	return (result);

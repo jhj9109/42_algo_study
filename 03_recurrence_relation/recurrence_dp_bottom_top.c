@@ -11,6 +11,8 @@ int	recurrence_dp_bottom_top(int n, int k)
 	if (n == 1)
 		return (1);
 	dp = malloc((n + 1) * sizeof(int));
+	if (dp == NULL)
+		return (ERROR);
 	dp[0] = 0;
 	dp[1] = 1;
 	for (int time = 2; time <= n; time++)
