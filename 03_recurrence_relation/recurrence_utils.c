@@ -6,7 +6,7 @@ t_germ	*ft_obj_new(int delay)
 {
 	t_germ	*ret;
 
-	ret = malloc(sizeof(t_germ));
+	ret = calloc(1, sizeof(t_germ));
 	if (ret == NULL)
 		return (NULL);
 	ret->delay = delay;
